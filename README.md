@@ -118,6 +118,41 @@ Offline suites: offline (37 checks), exchange safeguards (31), vision (32), stat
 explorer (18), exchanges (25), impact (12), router guard (15), app (34), project audit.
 The numbers are the results you reported; re-run to confirm on your machine.
 
+## Installation and Setup
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/nandini5617/ReSource-AI.git
+cd ReSource-AI
+```
+
+### 2. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Configure API keys
+
+Copy `.env.example` and rename the copy to `.env`.
+
+Add your own API keys for Groq, Gemini and OpenRouter.
+
+API keys can be obtained from their respective developer consoles. Never commit your `.env` file to GitHub.
+
+### 4. Run the application
+
+```bash
+streamlit run app.py
+```
+
+### Important
+
+ReSource AI uses external AI APIs for live AI-powered responses. Users must configure their own API keys and are subject to the providers' usage limits and pricing.
+
+Without API keys, only the application's available offline or rule-based functionality will work.
+
 ## Limitations
 
 - The organisation directory is **sample data**, not real NGOs. Availability must be confirmed.
